@@ -13,13 +13,15 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
+let arrayOfNumbers = [1,2,3,4,5,6,7,8,9]
 function sumOfNumbers(arrayOfNumbers) {
-  let sumNumbers =0 
-  for (let i =0; i< arrayOfNumbers.length; i++){
-    sumNumbers+= arrayOfNumbers [i]
+  let sumOfNumbers =0 
+  for (i in arrayOfNumbers){
+    sumOfNumbers += arrayOfNumbers [i];
   }
-    return arrayOfNumbers.length;
+    return sumOfNumbers;
 }
+let totalSum = sumOfNumbers(arrayOfNumbers)
  assignment.sumOfNumbers = sumOfNumbers;
 
 /**
@@ -32,14 +34,16 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-  let evenNumbers =[];
-  arrayOfNumbers.forEach((item)=> {
-    if ( item % 2 == 0){
-      evenNumbers.push(item)
+  let countEvenNumbers =0;
+  for (let i = 0; i < arrayOfNumbers; i++) {
+    if (arrayOfNumbers[i] % 2 === 0){
+      countevenNumbers++
     }
-  })
-    return arrayOfNumbers.length;
+    return countEvenNumbers
+  }
+  
 }
+countEvenNumbers(arrayOfNumbers)
 assignment.countEvenNumbers = countEvenNumbers;
 
 /**
